@@ -13,7 +13,7 @@ export default function GiftSection() {
   };
   return (
     <section className="w-full max-w-xl mx-auto text-center py-16 px-4 text-black">
-      <h2 className="text-4xl font-bold text-pink-600 mb-6 font-meowScript">Wedding Gifts</h2>
+      <h2 className="text-3xl md:text-5xl font-bold text-pink-600 mb-6 font-meowScript">Wedding Gifts</h2>
       <p className="text-gray-600 mb-6">
         Your presence is the most precious gift to us 💖.  
         If you wish to give a gift, here are some options:

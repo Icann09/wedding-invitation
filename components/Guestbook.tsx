@@ -22,7 +22,7 @@ export default function Guestbook() {
 
   return (
     <section className="w-full max-w-xl mx-auto text-center py-16 px-4">
-      <h2 className="text-4xl font-meowScript font-bold text-pink-600 mb-6">Guestbook</h2>
+      <h2 className="text-3xl md:text-5xl font-meowScript font-bold text-pink-600 mb-6">Guestbook</h2>
       <p className="text-gray-600 mb-6">Leave your wishes & prayers for us 💌</p>
 
       {/* Form */}
