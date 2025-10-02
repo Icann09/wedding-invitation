@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 
-export default function Countdown() {
-  const weddingDate = new Date("2025-10-12T00:00:00"); // your date 🎉
+// Declare once outside component so it’s stable
+const weddingDate = new Date("2025-10-12T00:00:00"); 
 
+export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState<{
     days: number;
     hours: number;
@@ -37,11 +38,10 @@ export default function Countdown() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [weddingDate]);
+  }, []); // ✅ no dependencies → runs once on mount
 
-  // While waiting for client mount, render nothing (avoids hydration mismatch)
   if (!timeLeft) {
-    return null;
+    return null; // prevents hydration mismatch
   }
 
   return (
