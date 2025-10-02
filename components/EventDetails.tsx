@@ -8,9 +8,10 @@ export default function EventDetails() {
         <h3 className="text-3xl md:text-5xl font-bold mb-2">
           بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
         </h3>
-        <p>
-          "Semoga Allah memberikan berkah untukmu, semoga Allah memberi berkah kepadamu dan menghimpun kalian berdua (sebagai suami istri) dalam kebaikan"
-        </p>
+        <blockquote className="italic text-lg text-gray-700 border-l-4 border-pink-400 pl-4 my-6">
+      &quot;Love is not about how many days, months, or years you have been together. 
+      Love is about how much you love each other every single day.&quot;
+    </blockquote>
         {/* Nama Mempelai */}
         <div className="py-14 flex flex-col gap-5 md:gap-7">
           <div>
