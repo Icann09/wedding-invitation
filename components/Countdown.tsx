@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Countdown() {
-  const weddingDate = new Date("2025-10-12T00:00:00");
+  const weddingDate = new Date("2025-10-12T00:00:00"); // your date 🎉
 
   const [timeLeft, setTimeLeft] = useState<{
     days: number;
@@ -12,24 +12,24 @@ export default function Countdown() {
     seconds: number;
   } | null>(null);
 
-  function calculateTimeLeft() {
-    const now = new Date().getTime();
-    const difference = weddingDate.getTime() - now;
+  useEffect(() => {
+    function calculateTimeLeft() {
+      const now = new Date();
+      const diff = weddingDate.getTime() - now.getTime();
 
-    if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+      if (diff <= 0) {
+        return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+      }
+
+      return {
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((diff / 1000 / 60) % 60),
+        seconds: Math.floor((diff / 1000) % 60),
+      };
     }
 
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
-  }
-
-  useEffect(() => {
-    // Run first update after mount
+    // First update after mount
     setTimeLeft(calculateTimeLeft());
 
     const timer = setInterval(() => {
@@ -37,7 +37,7 @@ export default function Countdown() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [weddingDate]);
 
   // While waiting for client mount, render nothing (avoids hydration mismatch)
   if (!timeLeft) {
@@ -45,7 +45,7 @@ export default function Countdown() {
   }
 
   return (
-    <div className="mb-4 flex gap-4 justify-center text-center text-white font-mono bg-black/30 rounded-sm ">
+    <div className="mb-4 flex gap-4 justify-center text-center text-white font-mono bg-black/30 rounded-sm p-2">
       <div>
         <p className="text-3xl font-bold">{timeLeft.days}</p>
         <p className="text-xs uppercase">Days</p>
