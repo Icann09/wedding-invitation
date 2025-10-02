@@ -1,14 +1,14 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import Hero from "@/components/Hero";
 import EventDetails from "@/components/EventDetails";
 import Gallery from "@/components/Gallery";
 import GiftSection from "@/components/GiftSection";
 import Guestbook from "@/components/Guestbook";
 
-export default function InvitePage() {
+function InvitePageContent() {
   const searchParams = useSearchParams();
   const guest = searchParams.get("guest") || null; // /invite?guest=John → "John"
   const [open, setOpen] = useState(false);
@@ -24,7 +24,6 @@ export default function InvitePage() {
 
   return (
     <main className="flex flex-col items-center bg-pink-50 min-h-screen">
-      {/* 👇 now pass isOpen */}
       <Hero guest={guest} onOpen={handleOpen} isOpen={open} />
 
       {open && (
@@ -36,5 +35,13 @@ export default function InvitePage() {
         </div>
       )}
     </main>
+  );
+}
+
+export default function InvitePage() {
+  return (
+    <Suspense fallback={<div className="p-4 text-center">Loading...</div>}>
+      <InvitePageContent />
+    </Suspense>
   );
 }
