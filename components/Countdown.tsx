@@ -45,22 +45,22 @@ export default function Countdown() {
   }
 
   return (
-    <div className="mb-4 flex gap-4 justify-center text-center text-white font-mono bg-black/30 rounded-sm p-2">
+    <div className="text-xl md:text-3xl font-bold w-48 md:w-64 mb-4 flex gap-4 justify-center text-center text-white font-mono bg-black/30 rounded-sm p-2">
       <div>
-        <p className="text-3xl font-bold">{timeLeft.days}</p>
-        <p className="text-xs uppercase">Days</p>
+        <p>{timeLeft.days}</p>
+        <p className="text-[9px] md:text-xs uppercase">Days</p>
       </div>
       <div>
-        <p className="text-3xl font-bold">{timeLeft.hours}</p>
-        <p className="text-xs uppercase">Hours</p>
+        <p>{timeLeft.hours}</p>
+        <p className="text-[9px] md:text-xs uppercase">Hours</p>
       </div>
       <div>
-        <p className="text-3xl font-bold">{timeLeft.minutes}</p>
-        <p className="text-xs uppercase">Minutes</p>
+        <p>{timeLeft.minutes}</p>
+        <p className="text-[9px] md:text-xs uppercase">Minutes</p>
       </div>
       <div>
-        <p className="text-3xl font-bold">{timeLeft.seconds}</p>
-        <p className="text-xs uppercase">Seconds</p>
+        <p>{timeLeft.seconds}</p>
+        <p className="text-[9px] md:text-xs uppercase">Seconds</p>
       </div>
     </div>
   );

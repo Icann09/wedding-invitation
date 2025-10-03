@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const photos = [
-  { src: "/photo1.jpeg", alt: "Couple photo 1" },
   { src: "/photo2.jpeg", alt: "Couple photo 2" },
   { src: "/photo3.jpeg", alt: "Couple photo 3" },
 ];

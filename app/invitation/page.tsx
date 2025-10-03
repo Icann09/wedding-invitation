@@ -38,7 +38,7 @@ function InvitePageContent() {
   );
 }
 
-export default function InvitePage() {
+export default function Page() {
   return (
     <Suspense fallback={<div className="p-4 text-center">Loading...</div>}>
       <InvitePageContent />

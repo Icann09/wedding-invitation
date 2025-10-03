@@ -1,22 +1,24 @@
 "use client";
 
+import Countdown from "./Countdown";
+
 export default function EventDetails() {
   return (
-    <section className="min-h-screen w-full flex flex-col items-center px-3 py-10 mt-4 md:mt-8 text-black">
+    <section className="min-h-screen w-full flex flex-col items-center px-3 py-10 mt-4 md:mt-8 text-black ">
       {/* Header */}
-      <div id="info" className="max-w-3xl text-center">
+      <div id="info" className="flex flex-col items-center  max-w-3xl text-center px-3 border-pink-400 border-x-4">
         <h3 className="text-3xl md:text-5xl font-bold mb-2">
           بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
         </h3>
-        <blockquote className="italic text-lg text-gray-700 border-l-4 border-pink-400 pl-4 my-6">
-      &quot;Love is not about how many days, months, or years you have been together. 
-      Love is about how much you love each other every single day.&quot;
-    </blockquote>
+        <blockquote className="italic text-lg text-gray-700 my-6">
+          &quot;Semoga Allah memberikan berkah untukmu, semoga Allah memberi berkah kepadamu dan menghimpun kalian berdua (sebagai suami istri) dalam kebaikan.&quot;
+        </blockquote>
+        <Countdown />
         {/* Nama Mempelai */}
         <div className="py-14 flex flex-col gap-5 md:gap-7">
           <div>
             <div className="text-3xl md:text-6xl  text-pink-600 font-meowScript font-bold mb-1">
-              <h1>Riska Handayani, S.Ak</h1>
+              <h1>Riska Handahyani, S.Ak</h1>
               <h1 className="text-2xl md:text-4xl">(Ekha)</h1>
             </div>
             <p>(Anak Pertama dari Bapak. (Alm) Raninu dan Ibu. Kudusiah, S.Pd)</p>
@@ -27,7 +29,7 @@ export default function EventDetails() {
               <h1>Muhlis</h1>
               <h1 className="text-2xl md:text-4xl">(Ulis)</h1>
             </div>
-              <p>(Anak Pertama dari Bapak. la Saleko dan Ibu. Wa Sumina)</p>
+              <p>(Anak Kelima dari Bapak. la Saleko dan Ibu. Wa Sumina)</p>
             </div>
         </div>
         {/* Tanggal dan tempat */}
@@ -57,7 +59,8 @@ export default function EventDetails() {
               </div>       
               <p className="mt-2 text-pink-600 font-semibold">Pukul 13:00 WITA s/d selesai</p>
               <a
-                href="#"
+                href="https://maps.app.goo.gl/m3gzeJ8hCjcpHYxN6?g_st=ipc"
+                target="_blank"
                 className="mt-4 inline-block bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition"
               >
                 Klik untuk membuka peta
