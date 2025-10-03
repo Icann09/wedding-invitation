@@ -45,7 +45,7 @@ export default function Countdown() {
   }
 
   return (
-    <div className="text-xl md:text-3xl font-bold w-48 md:w-64 mb-4 flex gap-4 justify-center text-center text-white font-mono bg-black/30 rounded-sm p-2">
+    <div className="text-xl md:text-3xl font-bold w-48 md:w-64 mb-4 flex gap-4 justify-center text-center text-white bg-pink-400 rounded-sm p-2">
       <div>
         <p>{timeLeft.days}</p>
         <p className="text-[9px] md:text-xs uppercase">Days</p>
