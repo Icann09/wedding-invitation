@@ -29,7 +29,7 @@ export default function EventDetails() {
               <h1>Muhlis</h1>
               <h1 className="text-2xl md:text-4xl">(Ulis)</h1>
             </div>
-              <p>(Anak Kelima dari Bapak. la Saleko dan Ibu. Wa Sumina)</p>
+              <p>(Anak Kelima dari Bapak. La Saleko dan Ibu. Wa Sumina)</p>
             </div>
         </div>
         {/* Tanggal dan tempat */}
