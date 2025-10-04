@@ -55,7 +55,7 @@ export default function GiftSection() {
           Jl. Ir. Soekarno, Desa Ghonsume (Belakang Kantor Lurah Wapunto)
         </p>
         <p className="font-semibold">Nama Penerima:</p>
-        <p className="mb-6">Riska Handayani</p>
+        <p className="mb-6">Riska Handahyani</p>
 
         {/* WhatsApp Button */}
         <a
