@@ -32,7 +32,7 @@ export default function GiftSection() {
             📋 Salin
           </button>
         </div>
-        <p className="text-sm mb-6">305501054297538 A/n RISKA HANDAYANI</p>
+        <p className="text-sm mb-6">305501054297538 A/n RISKA HANDAHYANI</p>
 
         {/* Mandiri */}
         <div className="flex items-center justify-between border p-4 rounded mb-4">
