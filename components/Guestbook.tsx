@@ -74,7 +74,7 @@ export default function Guestbook() {
             <div key={msg.id} className="bg-pink-50 border border-pink-100 rounded-lg p-4 text-left shadow-sm">
               <p className="font-semibold text-pink-700">{msg.name}</p>
               <p className="text-gray-700">{msg.text}</p>
-              <p className="text-xs text-gray-400">{new Date(msg.created_at).toLocaleString()}</p>
+              <p className="text-xs text-gray-400">🕒 {new Date(msg.created_at).toLocaleString()}</p>
             </div>
           ))
         )}

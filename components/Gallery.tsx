@@ -20,9 +20,7 @@ export default function Gallery() {
 
   return (
     <section className="w-full max-w-2xl mx-auto text-center py-16 px-4 flex items-center flex-col">
-      <h2 className="text-3xl md:text-5xl font-bold text-pink-600 mb-6 font-meowScript">Our Memories</h2>
-      <p className="text-gray-600 mb-8">A glimpse of US 💕</p>
-
+      <h2 className="text-3xl md:text-5xl font-bold text-pink-600 mb-6 font-meowScript">Our Stories  💕</h2>
       <div className="relative w-[300px] h-[500px] overflow-hidden rounded-lg shadow-lg">
         {photos.map((photo, idx) => (
           <Image

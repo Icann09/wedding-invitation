@@ -44,10 +44,11 @@ export default function EventDetails() {
               </div>       
               <p className="mt-2 text-pink-600 font-semibold">Pukul 09:30 WITA s/d selesai</p>
               <a
-                href="#"
+                href="https://maps.app.goo.gl/kxoGnyGkTz244esZ7?g_st=ipc"
                 className="mt-4 inline-block bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition"
+                target="_blank"
               >
-                Klik untuk membuka peta
+                Lihat Map
               </a>
             </div>
             <div className="p-4 border rounded-lg shadow-sm">
@@ -59,15 +60,15 @@ export default function EventDetails() {
               </div>       
               <p className="mt-2 text-pink-600 font-semibold">Pukul 13:00 WITA s/d selesai</p>
               <a
-                href="https://maps.app.goo.gl/m3gzeJ8hCjcpHYxN6?g_st=ipc"
+                href="https://maps.app.goo.gl/qVvaFLaRMkgjjZbs8?g_st=ipc"
                 target="_blank"
                 className="mt-4 inline-block bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition"
               >
-                Klik untuk membuka peta
+                Lihat Map
               </a>
             </div>
           </div>
-        <p className="text-gray-700 mt-1">
+        <p className="text-gray-700 mt-5">
           Dengan segala hormat kami bermaksud untuk mengundang
           Bapak/Ibu, Saudara/i untuk hadir pada acara pernikahan kami.
         </p>

@@ -4,9 +4,9 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import Hero from "@/components/Hero";
 import EventDetails from "@/components/EventDetails";
-import Gallery from "@/components/Gallery";
 import GiftSection from "@/components/GiftSection";
 import Guestbook from "@/components/Guestbook";
+import LoveStory from "@/components/LoveStory";
 
 function InvitePageContent() {
   const searchParams = useSearchParams();
@@ -29,7 +29,8 @@ function InvitePageContent() {
       {open && (
         <div id="details" className="w-full">
           <EventDetails />
-          <Gallery />
+          <LoveStory />
+          {/* <Gallery /> */}
           <GiftSection />
           <Guestbook />
         </div>

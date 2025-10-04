@@ -67,7 +67,7 @@ export default function Hero({ guest, onOpen, isOpen }: HeroProps) {
         {isOpen && (
           <button
             onClick={toggleMusic}
-            className="fixed z-10 w-12 h-12  right-12 md:right-8 bottom-5 mt-3 flex items-center justify-center gap-2 px-3 py-1 bg-black/30 rounded-full hover:bg-white/30 transition"
+            className="fixed z-10 w-12 h-12  right-12 md:right-5 bottom-5 mt-3 flex items-center justify-center gap-2 px-3 py-1 bg-black/30 rounded-full hover:bg-white/30 transition"
           >
             {isPlaying ? (
               <>

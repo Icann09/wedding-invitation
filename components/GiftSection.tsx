@@ -49,7 +49,7 @@ export default function GiftSection() {
         <p className="text-sm mb-6">1620007027927 A/n MUHLIS</p>
 
         {/* Address */}
-        <h2 className="text-2xl font-meowScript mb-4">Kirim Hadiah</h2>
+        <h2 className="text-2xl font-meowScript mb-4 font-bold text-pink-600">Kirim Hadiah</h2>
         <p className="font-semibold">Alamat:</p>
         <p className="mb-4">
           Jl. Ir. Soekarno, Desa Ghonsume (Belakang Kantor Lurah Wapunto)
