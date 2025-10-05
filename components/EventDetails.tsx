@@ -52,7 +52,7 @@ export default function EventDetails() {
               </a>
             </div>
             <div className="p-4 border rounded-lg shadow-sm">
-              <h3 className="font-semibold">Penjamuan</h3>
+              <h3 className="font-semibold">Perjamuan</h3>
               <div className="mt-2 text-gray-600">
                 <p>Kediaman Mempelai Pria</p>
                 <p>Jl. Sutan Syahrir Kel. Wapunto</p>
