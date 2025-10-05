@@ -35,7 +35,7 @@ export default function Hero({ guest, onOpen, isOpen }: HeroProps) {
     <section className="relative flex flex-col w-[500px] min-h-screen pt-4 md:pt-10 pb-16 items-center justify-between text-center bg-[url('/hero.png')] bg-cover bg-center text-white text-shadow-black">
       <div>
         <h1 className="font-dmSerif text-pink-600">The Wedding Of </h1>
-        <h2 className="text-5xl md:text-6xl font-bold my-4 font-meowScript text-pink-600">
+        <h2 className="text-5xl md:text-6xl font-bold my-2 md:my-4 font-meowScript text-pink-600">
           Ekha & Ulis
         </h2>
       </div>
