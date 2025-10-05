@@ -44,7 +44,7 @@ export default function Hero({ guest, onOpen, isOpen }: HeroProps) {
 
         <p className="text-sm">Kepada Yth.</p>
         <p className="font-meowScript font-bold text-2xl text-pink-500">
-          {guest ? `${guest} & Partner` : "Tamu Undangan"}
+          {guest ? `${guest}` : "Tamu Undangan"}
         </p>
 
         {/* Invitation button */}
